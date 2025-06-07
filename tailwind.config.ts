@@ -28,6 +28,7 @@ const config: Config = {
           100: '#FDF2F8',
           200: '#FCE7F3',
         },
+        'light-brown': '#D2B48C',
       },
       fontFamily: {
         playfair: ['var(--font-playfair)'],

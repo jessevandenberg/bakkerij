@@ -39,7 +39,7 @@ const ContactPage = () => {
   };
 
   return (
-    <main className="max-w-2xl mx-auto px-4 py-12">
+    <main className="max-w-2xl mx-auto px-4 py-12 bg-light-brown">
       <h1 className="font-playfair text-5xl font-bold text-center mb-12 text-burgundy-100">
         Neem Contact Op
       </h1>
@@ -53,7 +53,7 @@ const ContactPage = () => {
       ) : (
         <form 
           onSubmit={handleSubmit} 
-          className="bg-cream-50 shadow-sm rounded-lg p-8 space-y-6 border border-gold-100"
+          className="bg-light-brown shadow-sm rounded-lg p-8 space-y-6 border border-gold-100"
           noValidate
         >
           <div>
@@ -120,7 +120,7 @@ const ContactPage = () => {
           </div>
           <button
             type="submit"
-            className="w-full bg-burgundy-100 text-cream-50 font-cormorant text-lg py-4 px-6 rounded-md hover:bg-burgundy-200 focus:outline-none focus:ring-2 focus:ring-gold-300 focus:ring-offset-2 transition-colors duration-200"
+            className="w-full bg-burgundy-100 text-black font-cormorant text-lg py-4 px-6 rounded-md hover:bg-burgundy-200 focus:outline-none focus:ring-2 focus:ring-gold-300 focus:ring-offset-2 transition-colors duration-200"
           >
             Verstuur Bericht
           </button>
