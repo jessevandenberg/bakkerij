@@ -35,7 +35,8 @@ export default function RootLayout({
         <meta name="theme-color" content="#8B4513" />
       </head>
       <body
-        className={`${playfair.variable} ${cormorant.variable} font-cormorant antialiased bg-cream-50`}
+        className={`${playfair.variable} ${cormorant.variable} font-cormorant antialiased`}
+        style={{ backgroundColor: '#F5F5DC', minHeight: '100vh' }}
       >
         <Navbar />
         {children}

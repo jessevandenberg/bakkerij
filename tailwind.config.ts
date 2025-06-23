@@ -29,6 +29,22 @@ const config: Config = {
           200: '#FCE7F3',
         },
         'light-brown': '#D2B48C',
+        'beige': {
+          100: '#F5F5DC',
+          200: '#F8F5E4',
+        },
+        'champagne': {
+          100: '#F7E7CE',
+          200: '#EFE1C6',
+        },
+        'deep-gold': {
+          100: '#C28840',
+          200: '#B08B4F',
+        },
+        'soft-brown': {
+          100: '#BFA074',
+          200: '#A67C52',
+        },
       },
       fontFamily: {
         playfair: ['var(--font-playfair)'],

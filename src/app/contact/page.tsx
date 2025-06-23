@@ -39,13 +39,13 @@ const ContactPage = () => {
   };
 
   return (
-    <main className="max-w-2xl mx-auto px-4 py-12 bg-light-brown">
-      <h1 className="font-playfair text-5xl font-bold text-center mb-12 text-burgundy-100">
+    <main className="relative max-w-2xl mx-auto px-4 py-12 min-h-screen">
+      <h1 className="font-playfair text-5xl font-bold text-center mb-12 text-white drop-shadow-lg">
         Neem Contact Op
       </h1>
       {submitted ? (
         <div 
-          className="bg-cream-100 border border-gold-200 text-burgundy-100 p-8 rounded-lg text-center mb-8 animate-fade-in" 
+          className="bg-white border border-gold-200 text-burgundy-100 p-8 rounded-lg text-center mb-8 animate-fade-in shadow-lg" 
           role="status"
         >
           <p className="font-cormorant text-xl">Bedankt voor uw bericht! We nemen zo spoedig mogelijk contact met u op.</p>
@@ -53,7 +53,7 @@ const ContactPage = () => {
       ) : (
         <form 
           onSubmit={handleSubmit} 
-          className="bg-light-brown shadow-sm rounded-lg p-8 space-y-6 border border-gold-100"
+          className="bg-white shadow-lg rounded-lg p-8 space-y-6 border border-gold-100"
           noValidate
         >
           <div>
@@ -65,7 +65,7 @@ const ContactPage = () => {
               name="name"
               type="text"
               autoComplete="name"
-              className="w-full px-4 py-3 border border-gold-100 rounded-md focus:outline-none focus:ring-2 focus:ring-gold-300 focus:border-transparent transition-colors duration-200 bg-cream-50"
+              className="w-full px-4 py-3 border border-gold-100 rounded-md focus:outline-none focus:ring-2 focus:ring-gold-300 focus:border-transparent transition-colors duration-200 bg-white"
               value={form.name}
               onChange={handleChange}
               required
@@ -86,7 +86,7 @@ const ContactPage = () => {
               name="email"
               type="email"
               autoComplete="email"
-              className="w-full px-4 py-3 border border-gold-100 rounded-md focus:outline-none focus:ring-2 focus:ring-gold-300 focus:border-transparent transition-colors duration-200 bg-cream-50"
+              className="w-full px-4 py-3 border border-gold-100 rounded-md focus:outline-none focus:ring-2 focus:ring-gold-300 focus:border-transparent transition-colors duration-200 bg-white"
               value={form.email}
               onChange={handleChange}
               required
@@ -106,7 +106,7 @@ const ContactPage = () => {
               id="message"
               name="message"
               rows={4}
-              className="w-full px-4 py-3 border border-gold-100 rounded-md focus:outline-none focus:ring-2 focus:ring-gold-300 focus:border-transparent transition-colors duration-200 bg-cream-50"
+              className="w-full px-4 py-3 border border-gold-100 rounded-md focus:outline-none focus:ring-2 focus:ring-gold-300 focus:border-transparent transition-colors duration-200 bg-white"
               value={form.message}
               onChange={handleChange}
               required

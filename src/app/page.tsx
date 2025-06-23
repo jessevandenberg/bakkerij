@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const Home = () => (
-  <main className="max-w-7xl mx-auto px-4 py-12">
+  <main className="relative max-w-7xl mx-auto px-4 py-12 min-h-screen">
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
       <div className="space-y-6 animate-fade-in">
         <h1 className="font-serif text-5xl font-bold text-gray-800 leading-tight">
