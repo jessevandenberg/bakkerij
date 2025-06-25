@@ -1,32 +1,26 @@
 "use client";
 import { useState } from "react";
 
-type FormData = {
-  name: string;
-  email: string;
-  message: string;
-};
-
-const initialForm: FormData = { name: "", email: "", message: "" };
+const initialForm = { name: "", email: "", message: "" };
 
 const ContactPage = () => {
-  const [form, setForm] = useState<FormData>(initialForm);
+  const [form, setForm] = useState(initialForm);
   const [submitted, setSubmitted] = useState(false);
-  const [errors, setErrors] = useState<Partial<FormData>>({});
+  const [errors, setErrors] = useState<any>({});
 
-  const validate = (data: FormData) => {
-    const newErrors: Partial<FormData> = {};
+  const validate = (data: any) => {
+    const newErrors: any = {};
     if (!data.name.trim()) newErrors.name = "Naam is verplicht.";
     if (!data.email.trim() || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(data.email)) newErrors.email = "Voer een geldig e-mailadres in.";
     if (!data.message.trim()) newErrors.message = "Bericht is verplicht.";
     return newErrors;
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: any) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: any) => {
     e.preventDefault();
     const validationErrors = validate(form);
     if (Object.keys(validationErrors).length > 0) {

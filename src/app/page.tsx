@@ -4,7 +4,7 @@ const Home = () => (
   <main className="relative max-w-7xl mx-auto px-4 py-12 min-h-screen">
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
       <div className="space-y-6 animate-fade-in">
-        <h1 className="font-serif text-5xl font-bold text-gray-800 leading-tight">
+        <h1 className="font-playfair text-5xl font-bold text-gray-800 leading-tight">
           Welkom bij <span className="text-amber-700">Het witte bolletje</span>
         </h1>
         <p className="text-lg text-gray-600 leading-relaxed">
