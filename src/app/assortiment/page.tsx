@@ -11,7 +11,11 @@ const AssortimentPage = () => (
       {products.map((product) => (
         <Link href={`/assortiment/${product.slug}`} key={product.name}>
           <div 
+<<<<<<< HEAD
             className="bg-white rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group border border-gold-100 cursor-pointer hover:border-deep-gold-100"
+=======
+            className="bg-champagne-100 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group border-2 border-deep-gold-100 cursor-pointer hover:border-deep-gold-200"
+>>>>>>> parent of a3a062c (veranderingen)
           >
             <div className="relative h-80 overflow-hidden">
               <Image
