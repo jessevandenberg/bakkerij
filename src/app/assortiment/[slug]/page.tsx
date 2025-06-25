@@ -2,12 +2,12 @@
 import { notFound } from 'next/navigation';
 import { products } from '../products';
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function ProductDetailPage({ params }: { params: { slug: string } }) {
+  const [added, setAdded] = useState(false);
   const product = products.find((p) => p.slug === params.slug);
   if (!product) return notFound();
-
-  const [added, setAdded] = useState(false);
 
   function handleAddToCart() {
     setAdded(true);
@@ -17,9 +17,11 @@ export default function ProductDetailPage({ params }: { params: { slug: string }
   return (
     <main className="relative max-w-xl mx-auto px-4 py-12 min-h-screen">
       <div className="bg-white rounded-lg shadow-lg p-8 border border-deep-gold-100/20">
-        <img
+        <Image
           src={product.image}
           alt={product.name}
+          width={600}
+          height={256}
           className="w-full h-64 object-cover rounded mb-6 border border-soft-brown-100/20"
         />
         <h1 className="font-playfair text-4xl font-bold mb-4 text-deep-gold-100 drop-shadow-lg">{product.name}</h1>
