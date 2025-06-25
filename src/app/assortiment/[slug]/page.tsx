@@ -4,9 +4,7 @@ import { products } from '../products';
 import { useState } from 'react';
 import Image from 'next/image';
 
-type Props = { params: { slug: string } };
-
-export default function Page({ params }: Props) {
+export default function Page({ params }: { params: { slug: string } }) {
   const [added, setAdded] = useState(false);
   const product = products.find((p) => p.slug === params.slug);
   if (!product) return notFound();
